@@ -1,0 +1,160 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body{
+	text-align: center;
+	background: cover;
+}
+
+.player-stats-page-row2{
+	display: inline-block;
+	background-color: #fff;
+	width: 100%;	
+	margin-right: -30px;
+	margin-left: -30px;
+	height: 125px;
+	line-height: 125px;
+}
+
+.player-stats-page-name{
+	color: #01175F;
+	font-family:Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif;
+	text-align: center;
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	font-size: 60px;
+}
+
+#bannernumber, #bannerlogo{
+	width: 20%;
+}
+
+#bannername{
+	width: 60%
+}
+
+.name-banner{
+	display: inline-block;
+	float: left;
+}
+
+.name-banner p{
+	padding: 0;
+	margin: 0;
+}
+
+.player-stats-page-row1{
+	display: block;
+	margin-right: -30px;
+	margin-left: -30px;
+	background-color: #fff;
+	height: 415px;
+}
+
+.player-stats-page-personal-info{
+	display: inline-block;
+	float: right;
+	text-align: left;
+	background-color: #CCC;
+	/*border-bottom: 8px solid #01175F;*/
+	height: 100%;
+}
+
+.player-stats-page-personal-info p{
+	font-family: "impact", sans-serif;
+	color: #333;
+	font-size: 48px;	
+	margin: 12% auto;
+}
+
+.info-title, .info-title-info{
+	display: inline-block;
+	width: 50%;
+	height: 100%;
+	float: left;
+	letter-spacing: 2px;
+}
+
+.info-title-info{
+	text-align: center;
+}
+
+.player-stats-page-personal-img{
+	display: inline-block;
+	float: left;
+	/*background: url(../../dwyanewade.png);
+	background-size: cover;
+	background-repeat:no-repeat;*/
+	background-color: #01175F;
+	width: 50%;
+	height: 100%;
+}
+
+.player-stats-page-personal-img img{
+	width: 67%;
+}
+
+.player-stats-page-row3{
+	display: block;
+	margin-right: -30px;
+	margin-left: -30px;
+	/*background: linear-gradient(#fff, #333);
+	background-repeat: no-repeat;*/
+	text-align: center;
+	height: inherit;
+	background-color: #ccc;
+}
+
+.player-stats-page-stats{
+	display: block;
+	/*float: right;*/
+	/*width: 375px;*/
+	width: 50%;
+	height: 100%;
+	/*background-color: #2C2C2C;*/
+	background-color: #01175F;
+	padding: 0;
+}
+
+.stats-title-div{
+	height: 20%;
+	background-color:#484848;
+	margin: 0;
+	padding: 0;
+	color: #ccc;
+	font-size: 48px;
+}
+.stats-div{
+	height: 80%;
+	color: #ccc;
+	/*font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif;
+	font-size: 100px;*/
+	font-family: "cabin", sans-serif;
+	font-size: 120px;
+}
+
+.stats-div p{
+	line-height: 300px;
+}
+
+.player-stats-page-row4{
+	display: inline-block;
+	margin-right: -30px;
+	margin-left: -30px;
+	background-color: #333;
+	/*height: 300px;*/
+	
+}
+
+.player-stats-page-comp{
+	dispay: inline-block;
+	width: 100%;
+}
+
+.player-stats-page-comp img{
+	float: left;
+	width: 33%
+}
+
