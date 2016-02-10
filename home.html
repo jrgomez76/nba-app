@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html >
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Sports App</title>
+    
+     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+    <script src="prefixfree.min.js"></script>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="bootstrap-3.3.6/dist/js/bootstrap.min.js"></script>
+
+    <!-- Normalize -->
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
+
+    <!-- Bootstrap -->
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css?family=Cabin:400,600" rel="stylesheet" type="text/css"> 
+  </head>
+
+<style>
+html,
+body{
+  background-color: #01175F;
+  font-family: sans-serif;
+}
+
+.p {
+  text-align: center;
+  padding-top: 130px;
+}
+
+.btn {
+  height: 40px;
+  border-radius: 0;
+  width: 300px;
+  background: #333;
+  border: 1px solid #CCC;
+  border-bottom: 3px solid #CCC;
+  box-shadow: 0 2px 4px   rgba(0,0,0,0.15);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+
+/* HEADER */
+.header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  height: 66px;
+  line-height: 66px;
+  color: #fff;
+  background-color: #333;
+}
+
+.header__logo {
+  font-weight: 700;
+  padding: 0 25px;
+  float: right;
+}
+
+/* MENU */
+.menu {
+  float: left;
+}
+.menu a {
+  padding: 0 10px;
+}
+.menu a:hover {
+  color: #777474;
+  text-decoration:none;
+}
+
+/* RESPONSIVE */
+@media only screen and (max-width: 768px) {
+  .site-pusher,
+  .site-container {
+    height: 100%;
+  }
+
+  .site-container {
+    overflow: hidden;
+  }
+
+  .site-pusher {
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px);
+  }
+
+  .site-content {
+    position: absolute;
+    top: 66px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    padding-top: 0;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .header {
+    position: static;
+  }
+
+  .header__icon {
+    position: relative;
+    display: block;
+    float: left;
+    width: 50px;
+    height: 66px;
+    cursor: pointer;
+  }
+  .header__icon:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 1rem;
+    height: 0;
+    top: 16px;
+    left: 15px;
+    box-shadow: 0 10px 0 1px #fff, 0 16px 0 1px #fff, 0 22px 0 1px #fff;
+  }
+
+  .menu {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #7A0000;
+    width: 250px;
+    -webkit-transform: translateX(-250px);
+    transform: translateX(-250px);
+  }
+  .menu a {
+    display: block;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-bottom: 1px solid #000000;
+  }
+
+  .with--sidebar .site-pusher {
+    -webkit-transform: translateX(250px);
+    transform: translateX(250px);
+  }
+  .with--sidebar .site-cache {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+}
+
+
+</style>
+
+<div class="site-container">
+  <div class="site-pusher">
+    
+    <header class="header">
+      
+      <a href="#" class="header__icon" id="header__icon"></a>
+      <a href="#" class="header__logo">Logo</a>
+      
+      <nav class="menu">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </nav>
+      
+    </header>
+
+<div class="container">
+  <br>
+  <br>
+  <br>
+  <div class="row text-center">
+      <a href="#" class="btn btn-lg btn-primary">Player Stats</a>
+  </div>
+  <br>
+  <div class="row text-center">
+      <a href="#" class="btn btn-lg btn-primary">Teams Stats</a>
+  </div>
+  <br>
+  <div class="row text-center">
+      <a href="#" class="btn btn-lg btn-primary">Comparision</a>
+  </div>
+ 
+
+
+    
+    
+  </body>
+
+      <script>
+$(document).ready(function(){
+
+  (function($) {
+
+    $('#header__icon').click(function(e){
+      e.preventDefault();
+      $('body').toggleClass('with--sidebar');
+    });
+    
+    $('#site-cache').click(function(e){
+      $('body').removeClass('with--sidebar');
+    });
+
+  })(jQuery);
+
+});
+    </script>
+</html>
